@@ -16,10 +16,9 @@ const promptEvent = window.deferredPrompt;
 if (!promptEvent) {
  return;
 }
-});
-
 // Show prompt
 promptEvent.prompt();
+});
 // TODO: Add an handler for the `appinstalled` event
 window.addEventListener('appinstalled', (event) => {
     window.deferredPrompt = null;
